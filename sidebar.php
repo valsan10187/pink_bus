@@ -8,18 +8,17 @@ if(!isset($_SESSION['access'])){
     <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  
+    <!-- <link rel="stylesheet" href="style.css"> -->
     </head>
     <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3">
+            <div class="">
                 <?php include('rightbar.php'); ?>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 my-5">
                 <form method="POST" action="sidebar.php">
                     <div class="row mb-3">
                         <p class="fs-3 text-center fw-bold text-info">Bus Entry</p>
@@ -67,7 +66,7 @@ if(!isset($_SESSION['access'])){
                             <input type="text" class="form-control" name ="seatcount">
                         </div>
                         <div class="col-sm-5 mt-4">
-                            <label class="form-label fw-bold">Number Of Seats</label>
+                            <label class="form-label fw-bold">Number Of Reserved Seats</label>
                         </div>
                         <div class="col-md-5 mt-4">
                             <input type="text" class="form-control" name ="reserve">
@@ -228,7 +227,12 @@ $conn->close();
 }
 ?>
             </div>
+            <div class="col-md-1"></div>
+
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
         
     </body>
 </html>

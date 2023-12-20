@@ -4,54 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    .aTag{
+      color:#000 !important;
+    }
+    .aTag:hover{
+      background-color:#808080;
+    }
+  </style>
 </head>
 <body>
-  <div class="d-flex flex-column flex-shrink-0 p-3 bg-info" style="min-width: 250px; max-width: 100%;">
-    <a href="/" class="d-flex justify-content-center">
-      <hr>
-      <img width="150" height="150" src="logo.png" alt="">
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="index.php" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="# "></use></svg>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="sidebar.php" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-          Bus Entry
-        </a>
-      </li>
-      <li>
-        <a href="display.php" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-          Display
-        </a>
-      </li>
-      <li>
-        <a href="logout.php" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-          Logout
-        </a>
-      </li>
-    </ul>
-    <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center-dark " id="dropdownUser2" data-toggle="dropdown" aria-expanded="false">
-        <img src="logo ob.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong><?php echo $_SESSION['access']?></strong>
-      </a>
+  <div class="container">
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#" style="color:#0000000">PINK BUS</a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+      <h5 class="offcanvas-title " id="offcanvasNavbarLabel" style="color:#b33b72"> <b>PINK BUS</b> </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link aTag" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link aTag" href="sidebar.php">Bus entry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link aTag" href="display.php">Display</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link aTag" href="logout.php">Logout</a>
+          </li>
+        </ul>
+        
+      </div>
     </div>
   </div>
+</nav>
+  </div>
+
 
   <!-- Optional: Add Bootstrap JS and Popper.js for dropdowns -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 </html>

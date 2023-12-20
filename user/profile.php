@@ -13,15 +13,17 @@ if(!isset($_SESSION['access'])){
 <link rel="stylesheet" href="style1.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
     </head>
     <body>
-        <div class="row">
-        <div class="col-sm-3">
+        <div class="row "style ="background-color:#eeeeee">
+        <div class="">
         <?php
         include('usersidebar.php');
         ?>
       </div>
-      <div class="col-sm-9 ">
+      <div class="col-1 col-md-1"></div>
+      <div class="col-11 col-md-10 my-5">
       <?php
       $a=$_SESSION['access'];
       $servername="localhost";
@@ -161,8 +163,10 @@ $conn->close();
 ?>
 
        
-            </div>
 </div>
 </div>
+</div>
+<div class="col-md-1"></div>
+
     </body>
 </html>

@@ -94,11 +94,15 @@ input[type=checkbox]
     
 
 }
+.book2-container{
+  margin-top:123px !important;
+}
+
 </style>
 </head>
 <body>
     <div class="row">
-        <div class="col-sm-3">
+        <div class="">
 
                 <?php 
                     include('usersidebar.php');
@@ -152,8 +156,8 @@ if ($result->num_rows > 0) {
        ?>
              
 
-      
-        <div class="col-sm-5 mt-5">
+    <div class="col-1"></div>
+        <div class="col-11 col-lg-5 book2-container" >
           <form method="POST" action="checkout.php">
           <div class="row mb-3">
                         <div class="col-sm-3  ">
@@ -294,26 +298,27 @@ $conn->close();
 
 ?>    
         </div>
+    <div class="col-1"></div>
 
-        <div class="col-sm-4">
+        <div class="col-11 col-lg-5">
        
 
 
 
 
-    <div class="row justify-content-center ">
+    <div class="row justify-content-center book2-container">
         <div class="col-sm-9" style="border-left-style: groove; border-left-color:red;border-right-style: groove; border-right-color:red; ">
             
         <form name=form1 method=post action=seat.html>
                 <ol class="seats fs-5 fw-bold" type="A"  >
-                    <li class="seat"style="padding-bottom:5%;">
+                    <li class="seat text-nowrap" style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value="1A" onclick='chkcontrol(0)'; id="1A" style="float: left; ">
                         
                         <label  style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value="2A" onclick='chkcontrol(1)'; id="2A">
                       
   
-                        <label  style="padding-right: 20%;color: red;">2</label>
+                        <label  style="padding-right:17%;color: red;">2</label>
                         <input type=checkbox name=ckb value="3A" onclick='chkcontrol(2)'; id="3A">
                         
                         <label style=" margin-right: 3%;color: red;">3</label>
@@ -322,14 +327,14 @@ $conn->close();
                         <label  style="color: red;" >4</label>
                       </li>
 
-                      <li class="seat"style="padding-bottom:5%;">
+                      <li class="seat text-nowrap"style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value=1B onclick='chkcontrol(4)'; id="1B" style="float: left; ">
                         
                         <label  style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value=2B onclick='chkcontrol(5)'; id="2B">
                       
   
-                        <label  style="padding-right: 20%;color: red;">2</label>
+                        <label  style="padding-right: 17%;color: red;">2</label>
                         <input type=checkbox name=ckb value=3B onclick='chkcontrol(6)'; id="3B">
                         
                         <label  style=" margin-right: 3%;color: red;">3</label>
@@ -338,14 +343,14 @@ $conn->close();
                         <label for="1A" style="color: red;" >4</label>
                       </li>
 
-                      <li class="seat"style="padding-bottom:5%;">
+                      <li class="seat text-nowrap"style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value=1C onclick='chkcontrol(8)'; id="1C" style="float: left; ">
                         
                         <label for="1A" style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value=2C onclick='chkcontrol(9)'; id="2C">
                       
   
-                        <label for="1A" style="padding-right: 20%;color: red;">2</label>
+                        <label for="1A" style="padding-right: 17%;color: red;">2</label>
                         <input type=checkbox name=ckb value=3C onclick='chkcontrol(10)'; id="3C">
                         
                         <label for="1A" style=" margin-right: 3%;color: red;">3</label>
@@ -354,14 +359,14 @@ $conn->close();
                         <label for="1A" style="color: red;" >4</label>
                       </li>
 
-                      <li class="seat"style="padding-bottom:5%;">
+                      <li class="seat text-nowrap"style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value=1D onclick='chkcontrol(12)'; id="1D" style="float: left; ">
                         
                         <label for="1A" style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value=2D onclick='chkcontrol(13)'; id="2D">
                       
   
-                        <label for="1A" style="padding-right: 20%;color: red;">2</label>
+                        <label for="1A" style="padding-right: 17%;color: red;">2</label>
                         <input type=checkbox name=ckb value=3D onclick='chkcontrol(14)'; id="3D">
                         
                         <label for="1A" style=" margin-right: 3%;color: red;">3</label>
@@ -370,14 +375,14 @@ $conn->close();
                         <label for="1A" style="color: red;" >4</label>
                       </li>
 
-                      <li class="seat"style="padding-bottom:5%;">
+                      <li class="seat text-nowrap"style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value=1E onclick='chkcontrol(16)'; id="1E" style="float: left; ">
                         
                         <label for="1A" style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value=2E onclick='chkcontrol(17)'; id="2E">
                       
   
-                        <label for="1A" style="padding-right: 20%;color: red;">2</label>
+                        <label for="1A" style="padding-right: 17%;color: red;">2</label>
                         <input type=checkbox name=ckb value=3E onclick='chkcontrol(18)'; id="3E">
                         
                         <label for="1A" style=" margin-right: 3%;color: red;">3</label>
@@ -386,14 +391,14 @@ $conn->close();
                         <label for="1A" style="color: red;" >4</label>
                       </li>
 
-                      <li class="seat"style="padding-bottom:5%;">
+                      <li class="seat text-nowrap"style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value=1F onclick='chkcontrol(20)'; id="1F" style="float: left; ">
                         
                         <label for="1A" style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value=2F onclick='chkcontrol(21)'; id="2F">
                       
   
-                        <label for="1A" style="padding-right: 20%;color: red;">2</label>
+                        <label for="1A" style="padding-right: 17%;color: red;">2</label>
                         <input type=checkbox name=ckb value=3F onclick='chkcontrol(22)'; id="3F">
                         
                         <label for="1A" style=" margin-right: 3%;color: red;">3</label>
@@ -402,14 +407,14 @@ $conn->close();
                         <label for="1A" style="color: red;" >4</label>
                       </li>
 
-                      <li class="seat"style="padding-bottom:5%;">
+                      <li class="seat text-nowrap"style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value=1G onclick='chkcontrol(24)'; id="1G" style="float: left; ">
                         
                         <label for="1A" style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value=2G onclick='chkcontrol(25)'; id="2G">
                       
   
-                        <label for="1A" style="padding-right: 20%;color: red;">2</label>
+                        <label for="1A" style="padding-right: 17%;color: red;">2</label>
                         <input type=checkbox name=ckb value=3G onclick='chkcontrol(26)'; id="3G">
                         
                         <label for="1A" style=" margin-right: 3%;color: red;">3</label>
@@ -418,14 +423,14 @@ $conn->close();
                         <label for="1A" style="color: red;" >4</label>
                       </li>
 
-                      <li class="seat"style="padding-bottom:5%;">
+                      <li class="seat text-nowrap"style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value=1H onclick='chkcontrol(28)'; id="1H" style="float: left; ">
                         
                         <label for="1A" style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value=2H onclick='chkcontrol(29)'; id="2H">
                       
   
-                        <label for="1A" style="padding-right: 20%;color: red;">2</label>
+                        <label for="1A" style="padding-right: 17%;color: red;">2</label>
                         <input type=checkbox name=ckb value=3H onclick='chkcontrol(30)'; id="3H">
                         
                         <label for="1A" style=" margin-right: 3%;color: red;">3</label>
@@ -434,14 +439,14 @@ $conn->close();
                         <label for="1A" style="color: red;" >4</label>
                       </li>
 
-                      <li class="seat"style="padding-bottom:5%;">
+                      <li class="seat text-nowrap"style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value=1I onclick='chkcontrol(32)'; id="1I" style="float: left; ">
                         
                         <label for="1A" style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value=2I onclick='chkcontrol(33)'; id="2I">
                       
   
-                        <label for="1A" style="padding-right: 20%;color: red;">2</label>
+                        <label for="1A" style="padding-right: 17%;color: red;">2</label>
                         <input type=checkbox name=ckb value=3I onclick='chkcontrol(34)'; id="3I">
                         
                         <label for="1A" style=" margin-right: 3%;color: red;">3</label>
@@ -450,14 +455,14 @@ $conn->close();
                         <label for="1A" style="color: red;" >4</label>
                       </li>
 
-                      <li class="seat"style="padding-bottom:5%;">
+                      <li class="seat text-nowrap"style="padding-bottom:5%;">
                       <input type=checkbox name=ckb value=1J onclick='chkcontrol(36)'; id="1J" style="float: left; ">
                         
                         <label for="1A" style=" margin-right: 3%; color: red;">1</label>
                         <input type=checkbox name=ckb value=2J onclick='chkcontrol(37)'; id="2J">
                       
   
-                        <label for="1A" style="padding-right: 20%;color: red;">2</label>
+                        <label for="1A" style="padding-right: 17%;color: red;">2</label>
                         <input type=checkbox name=ckb value=3J onclick='chkcontrol(38)'; id="3J">
                         
                         <label for="1A" style=" margin-right: 3%;color: red;">3</label>

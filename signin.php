@@ -1,6 +1,7 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -40,8 +41,8 @@
 
   <!-- Jumbotron -->
   <div class="container py-4">
-    <div class="row g-0 align-items-center">
-      <div class="col-lg-6 mb-5 mb-lg-0">
+    <div class="row g-0 justify-content-center align-items-center">
+      <div class="col-lg-6 col-12 mb-5 mb-lg-0">
         <div class="card cascading-right" style="
             background: hsla(0, 0%, 100%, 0.55);
             backdrop-filter: blur(30px);
@@ -114,52 +115,52 @@
         </div>
       </div>
 
-      <div class="col-lg-6 mb-5 mb-lg-0">
+      <div class="col-lg-6 col-12 d-md-none d-lg-block mb-5 mb-lg-0">
         <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-100 rounded-4 shadow-4"
           alt="" />
       </div>
     </div>
   </div>
-  <!-- Jumbotron -->
-</section>
-<!-- Section: Design Block -->
-  
-  <?php
-  if(isset($_POST['signin']))
-{
-    $u=$_POST['username'];
-    $e=$_POST['email'];
-    $p=$_POST['pass'];
-    $d=$_POST['dob'];
-    $date=date_create("$d");
-    $v=$date;
-    $servername="localhost";
-    $username="root";
-    $password="";
-    $dbname="sreevalsan";
+    <!-- Jumbotron -->
+  </section>
+  <!-- Section: Design Block -->
+    
+    <?php
+    if(isset($_POST['signin']))
+  {
+      $u=$_POST['username'];
+      $e=$_POST['email'];
+      $p=$_POST['pass'];
+      $d=$_POST['dob'];
+      $date=date_create("$d");
+      $v=$date;
+      $servername="localhost";
+      $username="root";
+      $password="";
+      $dbname="sreevalsan";
 
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+  $conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-else{
-  echo "<script>window.open('./user/book.php','_self')</script>";
-}
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  else{
+    echo "<script>window.open('./user/book.php','_self')</script>";
+  }
 
-$sql = "INSERT INTO signin (Username, Email, Password, DateofBirth,action)VALUES ('".$u."','".$e."','".$p."','".$d."', 'user')";
+  $sql = "INSERT INTO signin (Username, Email, Password, DateofBirth,action)VALUES ('".$u."','".$e."','".$p."','".$d."', 'user')";
 
-if ($conn->query($sql) === TRUE) {
+  if ($conn->query($sql) === TRUE) {
 
-  echo "<script>window.open('./user/userlogin.php','_self')</script>";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
+    echo "<script>window.open('./user/userlogin.php','_self')</script>";
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
 
-$conn->close();
-}
-?>
+  $conn->close();
+  }
+  ?>
 
 <script
   type="text/javascript"

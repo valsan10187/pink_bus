@@ -9,3 +9,9 @@ body{
   /* justify-content: start; */
   /* align-items: center; */
 }
+@media (min-width: 992px) {
+  .table-vertical thead tr{
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}

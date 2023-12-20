@@ -26,18 +26,18 @@ if(!isset($_SESSION['access'])){
 </head>
 <body>
     <div class="row">
-      <div class="col-sm-3">
+      <div class="">
         <?php
         include('rightbar.php');
         ?>
       </div>
+      <div class="col-md-1"></div>
 
-      <div class="col-sm-9 p-2 bg-light border">
+      <div class="col-md-10 bg-light border table-responsive" style="margin-top: 100px;">
         <table class="table table-striped">
 <thead>
   <tr>
   <th scope="col">BusNo</th>
-
     <th scope="col">NAME</th>
     <th scope="col">Date</th>
     <th scope="col">Time</th>
@@ -45,12 +45,8 @@ if(!isset($_SESSION['access'])){
     <th scope="col">Drop</th>
     <th scope="col">Seatcount</th>
     <th scope="col">Reserved</th>
-    
-    
     </tr>
 </thead>
-
-
       <?php
      $servername="localhost";
      $username="root";
@@ -252,5 +248,7 @@ $conn->close()
 
 </table>               
         </div>
+        <div class="col-md-1"></div>
+
 </body>
     </html>
