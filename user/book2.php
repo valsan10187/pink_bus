@@ -158,7 +158,7 @@ if ($result->num_rows > 0) {
 
     <div class="col-1"></div>
         <div class="col-11 col-lg-5 book2-container" >
-          <form method="POST" action="checkout.php">
+          <form method="POST" action="checkout.php ">
           <div class="row mb-3">
                         <div class="col-sm-3  ">
                             <label class="form-label fw-bold">Your Name</label>
